@@ -1,7 +1,7 @@
 Résumé du projet d’analyse textuelle sur le Grand Débat National – Corpus de 87 562 contributions.
 
 Ce projet met en œuvre une chaîne de traitement NLP pour analyser des réponses ouvertes, en combinant techniques de pré-traitement, segmentation sémantique et extraction de motifs thématiques. Après une lemmatisation via spaCy
-(fr_core_news_md) pour normaliser les formes fléchies, nous appliquons une nettoyage linguistique (suppression des stopwords, ponctuation, et normalisation de la casse) afin de préparer le corpus à des analyses quantitatives.
+(fr_core_news_md) pour normaliser les formes fléchies, nous appliquons un nettoyage linguistique (suppression des stopwords, ponctuation, et normalisation de la casse) afin de préparer le corpus à des analyses quantitatives.
 L’innovation technique réside dans la segmentation contextuelle des réponses : face à la structure informelle des textes (listes, phrases incomplètes), nous utilisons un pipeline personnalisé avec spaCy (sentencizer + règles regex)
 pour découper les contributions en unités sémantiques cohérentes (ex. : scinder les énumérations d’actions en segments autonomes). Cette étape augmente la granularité du corpus et améliore la pertinence des analyses ultérieures.
 Pour l’exploration thématique, nous combinons :
